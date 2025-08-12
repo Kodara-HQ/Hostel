@@ -1,0 +1,186 @@
+{
+  "hostels": {
+    "hostel1": {
+      "name": "University Hall 1",
+      "location": "On Campus",
+      "rooms": {
+        "4-person": {
+          "type": "4-Person Room",
+          "capacity": 4,
+          "price": 3800,
+          "available": 25,
+          "amenities": ["wifi", "locker", "bedding", "study_desk", "shared_bathroom"]
+        }
+      }
+    },
+    "hostel2": {
+      "name": "University Hall 2",
+      "location": "On Campus",
+      "rooms": {
+        "4-person": {
+          "type": "4-Person Room",
+          "capacity": 4,
+          "price": 3800,
+          "available": 30,
+          "amenities": ["wifi", "locker", "bedding", "study_desk", "shared_bathroom"]
+        }
+      }
+    },
+    "hostel3": {
+      "name": "Credit Union Hostel",
+      "location": "Off Campus",
+      "rooms": {
+        "4-person": {
+          "type": "4-Person Room",
+          "capacity": 4,
+          "price": 3500,
+          "available": 15,
+          "amenities": ["wifi", "locker", "bedding", "study_desk", "shared_bathroom"]
+        },
+        "3-person": {
+          "type": "3-Person Room",
+          "capacity": 3,
+          "price": 4000,
+          "available": 10,
+          "amenities": ["wifi", "locker", "bedding", "study_desk", "shared_bathroom"]
+        },
+        "2-person": {
+          "type": "2-Person Room",
+          "capacity": 2,
+          "price": 4500,
+          "available": 8,
+          "amenities": ["wifi", "locker", "bedding", "study_desk", "shared_bathroom"]
+        }
+      }
+    },
+    "hostel4": {
+      "name": "Urban Backpackers",
+      "location": "Downtown",
+      "rooms": {
+        "dorm-male": {
+          "type": "Male Dormitory",
+          "capacity": 12,
+          "price": 20,
+          "available": 8,
+          "amenities": ["wifi", "locker", "bedding"]
+        },
+        "dorm-female": {
+          "type": "Female Dormitory",
+          "capacity": 10,
+          "price": 20,
+          "available": 6,
+          "amenities": ["wifi", "locker", "bedding"]
+        },
+        "dorm-mixed": {
+          "type": "Mixed Dormitory",
+          "capacity": 15,
+          "price": 18,
+          "available": 10,
+          "amenities": ["wifi", "locker", "bedding"]
+        },
+        "private": {
+          "type": "Private Room",
+          "capacity": 2,
+          "price": 35,
+          "available": 2,
+          "amenities": ["wifi", "shared_bathroom", "fan"]
+        }
+      }
+    },
+    "hostel5": {
+      "name": "Coastal Retreat",
+      "location": "Beach District",
+      "rooms": {
+        "dorm-male": {
+          "type": "Male Dormitory",
+          "capacity": 6,
+          "price": 40,
+          "available": 2,
+          "amenities": ["wifi", "locker", "bedding", "ocean_view"]
+        },
+        "dorm-female": {
+          "type": "Female Dormitory",
+          "capacity": 6,
+          "price": 40,
+          "available": 1,
+          "amenities": ["wifi", "locker", "bedding", "ocean_view"]
+        },
+        "dorm-mixed": {
+          "type": "Mixed Dormitory",
+          "capacity": 8,
+          "price": 38,
+          "available": 3,
+          "amenities": ["wifi", "locker", "bedding", "ocean_view"]
+        },
+        "private": {
+          "type": "Private Room",
+          "capacity": 2,
+          "price": 75,
+          "available": 1,
+          "amenities": ["wifi", "private_bathroom", "ocean_view", "terrace"]
+        }
+      }
+    },
+    "hostel6": {
+      "name": "Historic Quarters",
+      "location": "Old Town",
+      "rooms": {
+        "dorm-male": {
+          "type": "Male Dormitory",
+          "capacity": 8,
+          "price": 28,
+          "available": 4,
+          "amenities": ["wifi", "locker", "bedding", "historic_building"]
+        },
+        "dorm-female": {
+          "type": "Female Dormitory",
+          "capacity": 8,
+          "price": 28,
+          "available": 3,
+          "amenities": ["wifi", "locker", "bedding", "historic_building"]
+        },
+        "dorm-mixed": {
+          "type": "Mixed Dormitory",
+          "capacity": 10,
+          "price": 26,
+          "available": 5,
+          "amenities": ["wifi", "locker", "bedding", "historic_building"]
+        },
+        "private": {
+          "type": "Private Room",
+          "capacity": 2,
+          "price": 50,
+          "available": 2,
+          "amenities": ["wifi", "private_bathroom", "historic_building", "antique_furniture"]
+        }
+      }
+    }
+  },
+  "amenities": {
+    "wifi": "Free WiFi",
+    "locker": "Personal Locker",
+    "bedding": "Bedding Included",
+    "private_bathroom": "Private Bathroom",
+    "shared_bathroom": "Shared Bathroom",
+    "tv": "TV",
+    "air_conditioning": "Air Conditioning",
+    "fan": "Fan",
+    "river_view": "River View",
+    "mountain_view": "Mountain View",
+    "ocean_view": "Ocean View",
+    "balcony": "Balcony",
+    "terrace": "Terrace",
+    "fireplace": "Fireplace",
+    "historic_building": "Historic Building",
+    "antique_furniture": "Antique Furniture"
+  },
+  "booking_settings": {
+    "max_advance_booking_days": 365,
+    "min_stay_nights": 1,
+    "max_stay_nights": 30,
+    "cancellation_policy": {
+      "free_cancellation_hours": 24,
+      "partial_refund_hours": 48
+    }
+  }
+} 

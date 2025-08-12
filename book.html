@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Accommodation - UENR Hostels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="image/UENR.png" alt="UENR Hostels" class="logo">
+                    <span class="logo-text">UENR HOSTELS</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="book.html" class="nav-link active">Book Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#hostels" class="nav-link">Hostels</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enhanced Search Section -->
+    <section class="booking-hero">
+        <div class="container">
+            <div class="booking-hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Academic Year 2024/2025</span>
+                </div>
+                <h1 class="booking-title">Book Your UENR Accommodation</h1>
+                <p class="booking-subtitle">Choose from our premium hostels and secure your comfortable student accommodation for the academic year.</p>
+            </div>
+            <div class="booking-search-card">
+                <form class="booking-search-form">
+                    <div class="search-grid">
+                        <div class="form-group">
+                            <label for="hostel">Select Hostel</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-building"></i>
+                                <select id="hostel" name="hostel" required>
+                                    <option value="">Choose Hostel</option>
+                                    <option value="university-hall-1">University Hall 1</option>
+                                    <option value="university-hall-2">University Hall 2</option>
+                                    <option value="credit-union">Credit Union Hostel</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="room-type">Room Type</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-bed"></i>
+                                <select id="room-type" name="room-type" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="4-person">4 in a room</option>
+                                    <option value="3-person">3 in a room</option>
+                                    <option value="2-person">2 in a room</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary search-btn">
+                                <i class="fas fa-search"></i>
+                                Search Available Rooms
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Filters Section -->
+    <section class="booking-filters">
+        <div class="container">
+            <div class="filters-header">
+                <h2>Filter Options</h2>
+                <p>Refine your search to find the perfect accommodation</p>
+            </div>
+            <div class="filters-grid">
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Price Range</h3>
+                    <div class="price-slider">
+                        <input type="range" id="price-min" min="3500" max="4500" value="3500" step="100">
+                        <input type="range" id="price-max" min="3500" max="4500" value="4500" step="100">
+                        <div class="price-display">
+                            <span>GHS <span id="price-min-display">3,500</span> - <span id="price-max-display">4,500</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Rating</h3>
+                    <div class="rating-filters">
+                        <label class="rating-checkbox">
+                            <input type="checkbox" value="5" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">5 Stars</span>
+                        </label>
+                        <label class="rating-checkbox">
+                            <input type="checkbox" value="4" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">4+ Stars</span>
+                        </label>
+                        <label class="rating-checkbox">
+                            <input type="checkbox" value="3">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">3+ Stars</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-card">
+                    <div class="filter-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Amenities</h3>
+                    <div class="amenity-filters">
+                        <label class="amenity-checkbox">
+                            <input type="checkbox" value="wifi" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Free WiFi</span>
+                        </label>
+                        <label class="amenity-checkbox">
+                            <input type="checkbox" value="study-desk" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Study Desk</span>
+                        </label>
+                        <label class="amenity-checkbox">
+                            <input type="checkbox" value="shared-bathroom" checked>
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">Shared Bathroom</span>
+                        </label>
+                        <label class="amenity-checkbox">
+                            <input type="checkbox" value="security">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-label">24/7 Security</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Hostels List -->
+    <section class="booking-results">
+        <div class="container">
+            <div class="results-header">
+                <div class="results-info">
+                    <h2>Available Accommodations</h2>
+                    <p id="results-count">3 hostels available</p>
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="recommended">Recommended</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                        <option value="location">Location</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="hostels-grid" id="hostels-container">
+                <!-- Hostel cards will be dynamically loaded here -->
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-outline" id="load-more-btn">
+                    <i class="fas fa-plus"></i>
+                    Load More Options
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Your Stay</h3>
+                <button class="modal-close" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="hostel-summary">
+                    <img src="" alt="" id="modal-hostel-image">
+                    <div class="hostel-details">
+                        <h4 id="modal-hostel-name"></h4>
+                        <p id="modal-hostel-location"></p>
+                        <div class="hostel-rating" id="modal-hostel-rating"></div>
+                    </div>
+                </div>
+                <form class="booking-form" id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guest-name">
+                                <span class="form-index">1</span>
+                                Full Name
+                            </label>
+                            <input type="text" id="guest-name" name="guest-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guest-email">
+                                <span class="form-index">2</span>
+                                Email
+                            </label>
+                            <input type="email" id="guest-email" name="guest-email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guest-phone">
+                                <span class="form-index">3</span>
+                                Phone
+                            </label>
+                            <input type="tel" id="guest-phone" name="guest-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="index-number">
+                                <span class="form-index">4</span>
+                                Index Number
+                            </label>
+                            <input type="text" id="index-number" name="index-number" placeholder="Enter your student index number" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="room-type">
+                                <span class="form-index">5</span>
+                                Room Type
+                            </label>
+                            <select id="room-type" name="room-type" required>
+                                <option value="">Select Room Type</option>
+                                <option value="4-person">4 in a room</option>
+                                <option value="3-person">3 in a room</option>
+                                <option value="2-person">2 in a room</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="academic-year">
+                                <span class="form-index">6</span>
+                                Academic Year
+                            </label>
+                            <select id="academic-year" name="academic-year" required>
+                                <option value="">Select Academic Year</option>
+                                <option value="2024-2025">2024/2025</option>
+                                <option value="2025-2026">2025/2026</option>
+                                <option value="2026-2027">2026/2027</option>
+                                <option value="2027-2028">2027/2028</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests (Optional)</label>
+                        <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any special requirements or preferences..."></textarea>
+                    </div>
+                    <div class="booking-summary">
+                        <h4>Booking Summary</h4>
+                        <div class="summary-item">
+                            <span>Room Type:</span>
+                            <span id="summary-room-type">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Academic Year:</span>
+                            <span id="summary-duration">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Price per year:</span>
+                            <span id="summary-price">-</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="summary-total">-</span>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancel-booking">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="image/UENR.png" alt="UENR Hostels" class="logo">
+                        <span class="logo-text">UENR HOSTELS</span>
+                    </div>
+                    <p>Official hostel booking platform for University of Energy and Natural Resources students.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                        <li><a href="index.html#hostels">Our Hostels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +233 (0) 20 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> hostels@uenr.edu.gh</p>
+                        <p><i class="fas fa-map-marker-alt"></i> University of Energy and Natural Resources, Sunyani</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 UENR Hostels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html> 
